@@ -17,8 +17,11 @@ assembled from local evidence on 2026-09-17.
   `github.com/wking53214/STRIDE` was created **2026-09-11T23:13:56Z**, weeks
   after the original was deleted, and was empty until this push. It reuses the
   name only.
-- The original repository was itself **renamed from CLIP**.
-  `github.com/wking53214/CLIP` now returns 404.
+- The original repository was itself **renamed from CLIP**. The original
+  `github.com/wking53214/CLIP` was deleted along with it. A repo at that name
+  now exists again, created 2026-09-17 to hold the same reconstruction — it is
+  not the original either, and its content is merged into this repository (see
+  below).
 
 ## Both states of the repository are here
 
@@ -89,9 +92,12 @@ they are not — an unresolved conflict documented in the report.
 ## Layout
 
 ```
-recovered_repo/   the six artifacts + PROVENANCE.md + transcript source
+recovered_repo/                       the later state: stride-* / clip-original-* names
+recovered_repo_clip_state_919a740/    the earlier CLIP state: artifact_1-6.py
+CLIP_STATE_MAPPING.md                 SHA-256 proof that the two are the same bytes
 evidence/         extracted code blocks, session payloads, superseded variants
-manifests/        repository_tree.txt, file_manifest.json, carve_validation.json
+manifests/        repository_tree.txt (+ _clip_state), file_manifest.json (+ _clip_state),
+                  carve_validation.json
 provenance/       STRIDE_PROVENANCE.md — full chain including the CLIP rename
 reports/          STRIDE_RECOVERY_REPORT.md (with second-pass addendum),
                   STRIDE_CODE_INVENTORY.md
