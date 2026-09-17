@@ -20,6 +20,21 @@ assembled from local evidence on 2026-09-17.
 - The original repository was itself **renamed from CLIP**.
   `github.com/wking53214/CLIP` now returns 404.
 
+## Both states of the repository are here
+
+This repository was named **CLIP** before it was renamed to **STRIDE** — one
+repository, two names, not a lineage. Both states are preserved:
+
+- `recovered_repo/` — the later state, files named `stride-*` / `clip-original-*`
+- `recovered_repo_clip_state_919a740/` — the earlier state, files named
+  `artifact_1.py` … `artifact_6.py`
+
+**The two sets are byte-identical**; only the filenames differ. See
+`CLIP_STATE_MAPPING.md` for the pair-by-pair SHA-256 proof and why the earlier
+state is kept separately (it is the only state in which `PROVENANCE.md` and the
+filenames agree, and it is the more completely recovered of the two — 8 of 8
+entries against 6 of 7).
+
 ## What was actually recovered
 
 All six code artifacts, **byte-exact**, validated three independent ways against
